@@ -1,38 +1,226 @@
-.App {
+/* General styles for the whole app */
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* Simplified margin setting for top/bottom as 0 and left/right as auto */
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  width: 100%; /* Make width full for small screens */
+  max-width: 1000px; /* Maximum width */
+}
+
+@media (max-width: 1024px) {
+  body, html {
+    padding: 10px; /* Adds padding to reduce content touching the edges */
+  }
+}
+
+h2 {color: white;}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-links {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* About section styles */
+#about {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 200px;  /* Adjust width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 10px;  /* Optional: rounded corners */
+}
+
+
+
+.bio {
+  max-width: 600px;
+}
+
+/* Quiz styles */
+.quiz {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.question-section, .score-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.answer-section button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-section button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modal .content {
+  margin-top: 20px;
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal li {
+  padding: 8px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Work section styles */
+#work {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Contact section styles */
+#contact {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Links section styles */
+#links {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.link {
+  display: inline-block;
+  margin: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link i {
+  margin-right: 8px;
+}
+
+.link:hover {
+  color: #007bff;
 }
