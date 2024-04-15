@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.b8922982.css",
+    "main.js": "/Portfolio/static/js/main.36fbf31e.js",
+    "static/media/KyleMM.png": "/Portfolio/static/media/KyleMM.526cee4b6da93e61b2cf.png",
+    "index.html": "/Portfolio/index.html",
+    "main.b8922982.css.map": "/Portfolio/static/css/main.b8922982.css.map",
+    "main.36fbf31e.js.map": "/Portfolio/static/js/main.36fbf31e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8922982.css",
+    "static/js/main.36fbf31e.js"
+  ]
+}
