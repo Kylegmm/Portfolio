@@ -1,26 +1,22 @@
 import React from 'react';
-import './App.css'; // Ensure you have a CSS file for styles
+import './App.css'; // Ensure you have a CSS file for styles\
+import python from './images/Python.png';
+import project2 from './images/Webpage.png'
 
 function Work() {
   const projects = [
     {
-      name: "Project One",
-      description: "This is a brief description of Project One. It's a responsive web application designed to handle user data securely.",
-      imageUrl: "/project1.jpg", // Replace with your image path or URL
-      githubUrl: "https://github.com/yourgithub/project1"
+      name: "Monthly Payment Report",
+      description: "Python project to recount the monthly payment of a business.",
+      imageUrl: python,
+      githubUrl: "https://github.com/Kylegmm/QAP_5_KMM"
     },
     {
       name: "Project Two",
-      description: "This is a brief description of Project Two. It features complex algorithms for data analysis and visualization.",
-      imageUrl: "/project2.jpg", // Replace with your image path or URL
-      githubUrl: "https://github.com/yourgithub/project2"
+      description: "Webpage for a band called the Echo waves.",
+      imageUrl: project2,
+      githubUrl: "https://github.com/Kylegmm/Sprint_1_KMM_LM_SS"
     },
-    {
-      name: "Project Three",
-      description: "This is a brief description of Project Three. It's a mobile-first application designed for high performance across devices.",
-      imageUrl: "/project3.jpg", // Replace with your image path or URL
-      githubUrl: "https://github.com/yourgithub/project3"
-    }
   ];
 
   return (
